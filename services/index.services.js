@@ -2,7 +2,6 @@ const db = require('../database')
 
 function getQuery(query) {
     return new Promise((res, rej) => {
-  
     db.query(query, (err, rows, fields) =>{
       if(!err)
       {
